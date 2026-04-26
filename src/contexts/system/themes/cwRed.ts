@@ -1,0 +1,36 @@
+import { DefaultTheme } from "styled-components"
+
+const cwRed: DefaultTheme = {
+  name: "cwRed",
+  anchor: "#0000ff",
+  anchorVisited: "#ff00ff",
+  borderDark: "#000000",
+  borderDarkest: "#000000",
+  borderLight: "#ff0000",
+  borderLightest: "#ff0000",
+  canvas: "#000000",
+  canvasText: "#ff0000",
+  canvasTextDisabled: "#000000",
+  canvasTextDisabledShadow: "#000000",
+  canvasTextInvert: "#ff0000",
+  checkmark: "#ff0000",
+  checkmarkDisabled: "#000000",
+  flatDark: "#000000",
+  flatLight: "#ff0000",
+  focusSecondary: "#000000",
+  headerBackground: "#ff0000",
+  headerNotActiveBackground: "#000000",
+  headerNotActiveText: "#000000",
+  headerText: "#000000",
+  hoverBackground: "#ff0000",
+  material: "#ff0000",
+  materialDark: "#ff0000",
+  materialText: "#ff0000",
+  materialTextDisabled: "#000000",
+  materialTextDisabledShadow: "#000000",
+  materialTextInvert: "#ff0000",
+  progress: "#ff0000",
+  tooltip: "#000000",
+}
+
+export default cwRed

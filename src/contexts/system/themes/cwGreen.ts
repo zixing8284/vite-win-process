@@ -1,0 +1,36 @@
+import { DefaultTheme } from "styled-components"
+
+const cwGreen: DefaultTheme = {
+  name: "cwGreen",
+  anchor: "#0000ff",
+  anchorVisited: "#ff00ff",
+  borderDark: "#000000",
+  borderDarkest: "#000000",
+  borderLight: "#00ff00",
+  borderLightest: "#00ff00",
+  canvas: "#000000",
+  canvasText: "#00ff00",
+  canvasTextDisabled: "#000000",
+  canvasTextDisabledShadow: "#000000",
+  canvasTextInvert: "#00ff00",
+  checkmark: "#00ff00",
+  checkmarkDisabled: "#000000",
+  flatDark: "#000000",
+  flatLight: "#00ff00",
+  focusSecondary: "#000000",
+  headerBackground: "#00ff00",
+  headerNotActiveBackground: "#000000",
+  headerNotActiveText: "#000000",
+  headerText: "#000000",
+  hoverBackground: "#00ff00",
+  material: "#00ff00",
+  materialDark: "#00ff00",
+  materialText: "#00ff00",
+  materialTextDisabled: "#000000",
+  materialTextDisabledShadow: "#000000",
+  materialTextInvert: "#00ff00",
+  progress: "#00ff00",
+  tooltip: "#000000",
+}
+
+export default cwGreen
