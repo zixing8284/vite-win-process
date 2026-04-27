@@ -1,4 +1,3 @@
-import React from "react"
 import NormalWindow from "@/components/system/Window/NormalWindow"
 import { useViewportContext } from "@/contexts/viewport"
 import { WindowContentStyled } from "@/components/system/Window/CommonStyle"
