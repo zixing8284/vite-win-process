@@ -5,8 +5,6 @@ import { WindowContentStyled } from "@/components/system/Window/CommonStyle"
 
 import { IFRAME_CONFIG } from "@/contexts/constants"
 
-import testPDF from "/test.pdf"
-
 const DocumentWrapper = styled.div`
   margin: 0 auto;
   position: relative;
@@ -21,10 +19,13 @@ type PDFReaderProps = {
   pdfURL?: string
 }
 
-const PDFReader = ({ pdfURL = testPDF }: PDFReaderProps) => {
+const defaultPdfUrl = `${import.meta.env.BASE_URL}test.pdf`
+
+const PDFReader = ({ pdfURL = defaultPdfUrl }: PDFReaderProps) => {
   const [loaded, setLoaded] = useState(false)
   const iframeRef = React.useRef<HTMLIFrameElement>(null)
   const windowRef = React.useRef<HTMLDivElement>(null)
+  const viewerSrc = `${import.meta.env.BASE_URL}pdfjs-4.0.189-dist/web/viewer.html?file=${encodeURIComponent(pdfURL)}`
 
   useEffect(() => {
     const handleMouseDown = () => {
@@ -68,7 +69,7 @@ const PDFReader = ({ pdfURL = testPDF }: PDFReaderProps) => {
             <iframe
               ref={iframeRef}
               onLoad={() => setLoaded(true)}
-              src={`/pdfjs-4.0.189-dist/web/viewer.html?file=${pdfURL}`}
+              src={viewerSrc}
               width={"100%"}
               height={"100%"}
               style={{

@@ -12,6 +12,7 @@ const cMapsDir = path.join(
   path.dirname(require.resolve("pdfjs-dist/package.json")),
   "cmaps",
 )
+const repoBase = "/vite-win-process/"
 const pdfJsViewerPath = path.resolve(
   __dirname,
   "public/pdfjs-4.0.189-dist/web/viewer.html",
@@ -19,6 +20,7 @@ const pdfJsViewerPath = path.resolve(
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.GITHUB_ACTIONS === "true" ? repoBase : "/",
   assetsInclude: ["**/*.bmp"],
   plugins: [
     react({
