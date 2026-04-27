@@ -36,3 +36,9 @@ The visual style and interaction design are inspired by:
 pnpm install
 pnpm dev
 ```
+
+## Deploy To GitHub Pages
+
+This repository is configured to publish the `dist` output to GitHub Pages at:
+
+https://zixing8284.github.io/vite-win-process/
