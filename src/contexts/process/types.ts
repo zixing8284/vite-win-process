@@ -4,7 +4,6 @@ export type StaticProcessId = [
   "Sample",
   "ThemeDesigner",
   "MediaPlayer",
-  "PDFReader",
   "CustomSetting",
 ]
 
@@ -15,7 +14,6 @@ export type Processes = {
   ThemeDesigner: Process
   MediaPlayer: Process
   CustomSetting: Process
-  PDFReader: Process
 } & Record<string, Process>
 
 export type Process = {

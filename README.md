@@ -1,6 +1,6 @@
 # vite-win-process
 
-A Windows 95-style desktop simulation built with React, TypeScript, and Vite. Supports multi-window management, draggable/resizable windows, theme customization, media playback, PDF viewing, and a lock screen.
+A Windows 95-style desktop simulation built with React, TypeScript, and Vite. Supports multi-window management, draggable/resizable windows, theme customization, media playback, and a lock screen.
 
 ![Preview](docs/preview.png)
 
@@ -10,7 +10,6 @@ A Windows 95-style desktop simulation built with React, TypeScript, and Vite. Su
 - **Drag & resize** — windows are fully draggable and resizable via [interact.js](https://interactjs.io/)
 - **Theme customization** — switch themes, change wallpapers, and adjust system colors in real time
 - **Media Player** — video playback with seek, volume, and speed controls
-- **PDF Reader** — in-window PDF viewer powered by [PDF.js](https://mozilla.github.io/pdf.js/)
 - **Lock Screen** — password-protected lock screen overlay
 
 ## Tech Stack
@@ -21,7 +20,6 @@ A Windows 95-style desktop simulation built with React, TypeScript, and Vite. Su
 | UI Library    | [react95](https://github.com/react95-io/React95) — Windows 95 component library |
 | Styling       | styled-components                                                               |
 | Drag & Resize | interact.js                                                                     |
-| PDF Viewer    | PDF.js (static dist)                                                            |
 
 ## Inspiration
 
