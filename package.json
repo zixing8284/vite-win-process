@@ -1,5 +1,6 @@
 {
-  "name": "vite-project",
+  "name": "vite-win-process",
+  "description": "A sample of Windows 95-style window aesthetics.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
