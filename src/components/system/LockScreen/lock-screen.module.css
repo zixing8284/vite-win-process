@@ -1,0 +1,66 @@
+.lockscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  background: #008080;
+  color: white;
+  overflow: hidden;
+  z-index: 9999;
+  user-select: none;
+}
+
+.enter {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  inset: 12rem auto auto 50%;
+  justify-content: start;
+  position: absolute;
+  row-gap: 0.5rem;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.panel {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  inset: auto auto 4rem 50%;
+  justify-content: space-between;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.panelitem {
+  display: grid;
+  place-items: center;
+  position: relative;
+  transition: all .25s;
+}
+
+.panelitem>button {
+  background: #008080;
+  color: white;
+  font-size: 2.5rem;
+  display: grid;
+  place-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "JetBrains Mono", monospace, "Roboto", sans-serif;
+  height: fit-content;
+  width: fit-content;
+}
+
+
+.time {
+  font-size: 4.375rem;
+}
+
+.date {
+  font-size: 2.5rem;
+}
